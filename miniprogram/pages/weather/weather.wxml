@@ -1,0 +1,10 @@
+<!--pages/weather/weather.wxml-->
+<view class="container">
+
+    <view class="city" bindtap="bindViewTap">
+        <text>当前城市：{{city}}</text><!--{{}}用来获取同页js文件中注册页面data中的数据-->
+        <text class="update">{{basic.update.loc}}</text>
+    </view>
+
+
+</view>

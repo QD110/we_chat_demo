@@ -1,0 +1,24 @@
+<!--pages/login/home.wxml-->
+<view class="container">
+
+    <view class="itemView"> 手机
+        <input class="input" name="userName" placeholder="请输入用户名" bindinput="userNameInput" value="{{userName}}" maxlength="11"/>
+    </view>
+
+    <view class="itemView"> 密码
+        <input class="input" name="userName" placeholder="请输入密码" bindinput="passwordInput" value="{{passWord}}"/>
+    </view>
+
+    <view class="item_click">
+        <button bindtap="next">
+            提交按钮
+        </button>
+    </view>
+    <view class="item_click">
+        <button bindtap="resetClick">
+            重置按钮
+        </button>
+    </view>
+
+
+</view>

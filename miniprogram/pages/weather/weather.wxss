@@ -1,0 +1,5 @@
+/* pages/weather/weather.wxss */
+/**weather.wxss**/
+.city {padding: 3% 5%; background: #ddd;}
+.city text{font-size: 16px; color: #666;}
+.city .update{ font-size: 12px; float: right;}

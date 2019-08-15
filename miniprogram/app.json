@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/card/home",
+
+    "pages/detail/home",
+
+    "pages/login/home",
+
+    "pages/weather/weather",
+    "pages/about/about",
+    "pages/city/city"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "demo",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#00CB7C",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/weather/weather",
+        "iconPath": "images/menu_home.png",
+        "selectedIconPath": "images/menu_home_c.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/city/city",
+        "iconPath": "images/menu_message.png",
+        "selectedIconPath": "images/menu_message_c.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/menu_personal.png",
+        "selectedIconPath": "images/menu_personal_c.png",
+        "text": "关于"
+      }
+    ],
+    "position": "bottom"
+  }
+}

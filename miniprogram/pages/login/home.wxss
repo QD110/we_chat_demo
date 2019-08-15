@@ -1,0 +1,10 @@
+/* pages/login/home.wxss */
+
+.itemView {
+    height: 50px;
+}
+
+.input {
+    font-size: 15px;
+
+}

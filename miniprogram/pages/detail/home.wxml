@@ -1,0 +1,46 @@
+<!--pages/detail/home.wxml-->
+<view class="container">
+    <view class="time-text">
+        距结束
+        <text>{{countDownDay}}</text>
+        天
+        <text>{{countDownHour}}</text>
+        :
+        <text>{{countDownMinute}}</text>
+        :
+        <text>{{countDownS}}</text>
+
+
+    </view>
+
+    <view>
+        <text bindtap="reset">{{resetS}}</text>
+    </view>
+
+    <view>
+        <text bindtap="start">{{startS}}</text>
+    </view>
+
+<!--    <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="{{false}}" event-model="bubble">
+        <cover-view class="controls">
+            <cover-view class="play" bindtap="play">
+                <cover-image class="img" src="images/menu_home.png" />
+            </cover-view>
+            <cover-view class="pause" bindtap="pause">
+                <cover-image class="img" src="images/menu_message.png" />
+            </cover-view>
+            <cover-view class="time">00:00</cover-view>
+        </cover-view>
+    </video>-->
+
+   <swiper class="swiper" indicator-dots="{{indicator}}" easing-function="{{easing}}" bindchange="bindchange" current="{{current}}" autoplay="{{autoplay}}" interval="{{interval}}"  duration="{{duration}}"  vertical="{{vertical}}"   >
+
+       <block wx:for="{{imgUrls}}">
+           <swiper-item>
+               <image src="{{item}}" class="slide-image"/>
+           </swiper-item>
+       </block>
+
+   </swiper>
+
+</view>
